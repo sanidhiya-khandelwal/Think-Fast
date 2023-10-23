@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: yellow;
+    padding: 1.5rem;
+}
+
+.container {
+    width: 50rem;
+    margin: auto;
+    padding: 0rem;
+    border-radius: 12px;
+    background-color: blueviolet;
+}
+
+.app-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+}
+
+.app-heading h1 {
+    padding: 0rem 1rem;
+    color: white;
+}
+
+.timer-container h2,
+span {
+    color: white;
+}
+
+.app-content {
+    padding: 1rem;
+}
+
+.question {
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    background-color: rgb(234, 183, 183);
+    border-radius: 8px;
+}
+
+
+.options h1 {
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    background-color: rgb(155, 209, 253);
+}
+
+.options h1:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+
+#btn {
+    padding: 0.5rem 1.3rem;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-right: 0.6rem;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
+/* media query */
+
+@media all and (width<=1260px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .app-heading {
+        font-size: 0.6rem;
+    }
+
+    .question {
+        font-size: 1.3rem;
+    }
+
+    .options h1 {
+        font-size: 1.3rem;
+    }
+
+    .button {
+        padding: 0.3rem;
+    }
+
+    #btn {
+        padding: 0.5rem 1.3rem;
+        width: 5rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media all and (width<=400px) {
+    body {
+        padding: 1.2rem;
+    }
+
+    .app-heading {
+        font-size: 0.5rem;
+    }
+
+    .question {
+        font-size: 1.3rem;
+    }
+
+    .options h1 {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 0.3rem;
+    }
+
+    #btn {
+        padding: 0.3rem 0.5rem;
+        width: 5rem;
+        font-size: 0.9rem;
+    }
+}
